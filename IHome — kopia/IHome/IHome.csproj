@@ -1,0 +1,1822 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Views\Buildings\assets\css\black-dashboard.css" />
+    <None Remove="Views\Buildings\assets\css\black-dashboard.css.map" />
+    <None Remove="Views\Buildings\assets\css\black-dashboard.min.css" />
+    <None Remove="Views\Buildings\assets\css\nucleo-icons.css" />
+    <None Remove="Views\Buildings\assets\demo\demo.css" />
+    <None Remove="Views\Buildings\assets\demo\demo.js" />
+    <None Remove="Views\Buildings\assets\fonts\nucleo.eot" />
+    <None Remove="Views\Buildings\assets\fonts\nucleo.ttf" />
+    <None Remove="Views\Buildings\assets\fonts\nucleo.woff" />
+    <None Remove="Views\Buildings\assets\fonts\nucleo.woff2" />
+    <None Remove="Views\Buildings\assets\img\12345.png" />
+    <None Remove="Views\Buildings\assets\img\anime3.png" />
+    <None Remove="Views\Buildings\assets\img\anime6.png" />
+    <None Remove="Views\Buildings\assets\img\apple-icon.png" />
+    <None Remove="Views\Buildings\assets\img\bg5.jpg" />
+    <None Remove="Views\Buildings\assets\img\default-avatar.png" />
+    <None Remove="Views\Buildings\assets\img\emilyz.jpg" />
+    <None Remove="Views\Buildings\assets\img\favicon.png" />
+    <None Remove="Views\Buildings\assets\img\header.jpg" />
+    <None Remove="Views\Buildings\assets\img\img_3115.jpg" />
+    <None Remove="Views\Buildings\assets\img\james.jpg" />
+    <None Remove="Views\Buildings\assets\img\mike.jpg" />
+    <None Remove="Views\Buildings\assets\img\now-logo.png" />
+    <None Remove="Views\Buildings\assets\js\black-dashboard.js" />
+    <None Remove="Views\Buildings\assets\js\black-dashboard.js.map" />
+    <None Remove="Views\Buildings\assets\js\black-dashboard.min.js" />
+    <None Remove="Views\Buildings\assets\js\core\bootstrap.min.js" />
+    <None Remove="Views\Buildings\assets\js\core\jquery.min.js" />
+    <None Remove="Views\Buildings\assets\js\core\popper.min.js" />
+    <None Remove="Views\Buildings\assets\js\plugins\bootstrap-notify.js" />
+    <None Remove="Views\Buildings\assets\js\plugins\chartjs.min.js" />
+    <None Remove="Views\Buildings\assets\js\plugins\perfect-scrollbar.jquery.min.js" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\bootstrap-grid.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\bootstrap-reboot.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\bootstrap.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_alert.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_background-variant.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_badge.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_border-radius.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_box-shadow.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_breakpoints.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_buttons.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_caret.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_clearfix.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_deprecate.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_float.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_forms.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_gradients.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_grid-framework.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_grid.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_hover.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_image.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_list-group.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_lists.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_nav-divider.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_pagination.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_reset-text.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_resize.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_screen-reader.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_size.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_table-row.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_text-emphasis.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_text-hide.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_text-truncate.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_transition.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_visibility.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\utilities\_align.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\utilities\_background.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\utilities\_borders.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\utilities\_clearfix.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\utilities\_display.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\utilities\_embed.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\utilities\_flex.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\utilities\_float.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\utilities\_overflow.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\utilities\_position.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\utilities\_screenreaders.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\utilities\_shadows.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\utilities\_sizing.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\utilities\_spacing.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\utilities\_stretched-link.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\utilities\_text.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\utilities\_visibility.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\vendor\_rfs.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\_alert.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\_badge.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\_breadcrumb.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\_button-group.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\_buttons.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\_card.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\_carousel.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\_close.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\_code.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\_custom-forms.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\_dropdown.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\_forms.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\_functions.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\_grid.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\_images.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\_input-group.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\_jumbotron.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\_list-group.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\_media.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\_mixins.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\_modal.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\_nav.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\_navbar.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\_pagination.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\_popover.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\_print.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\_progress.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\_reboot.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\_root.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\_spinners.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\_tables.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\_toasts.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\_tooltip.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\_transitions.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\_type.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\_utilities.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\bootstrap\_variables.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\cards\_card-chart.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\cards\_card-map.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\cards\_card-plain.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\cards\_card-task.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\cards\_card-user.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\mixins\opacity.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\mixins\_alert.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\mixins\_background-variant.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\mixins\_badges.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\mixins\_buttons.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\mixins\_dropdown.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\mixins\_forms.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\mixins\_icon.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\mixins\_inputs.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\mixins\_modals.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\mixins\_page-header.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\mixins\_popovers.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\mixins\_vendor-prefixes.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\mixins\_wizard.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\utilities\_backgrounds.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\utilities\_floating.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\utilities\_helper.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\utilities\_position.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\utilities\_shadows.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\utilities\_sizing.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\utilities\_spacing.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\utilities\_text.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\utilities\_transform.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\vendor\_plugin-animate-bootstrap-notify.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\vendor\_plugin-perfect-scrollbar.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\_alerts.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\_buttons.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\_card.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\_checkboxes-radio.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\_dropdown.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\_example-pages.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\_fixed-plugin.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\_footer.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\_forms.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\_functions.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\_images.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\_input-group.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\_misc.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\_mixins.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\_modal.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\_navbar.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\_rtl.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\_sidebar-and-main-panel.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\_tables.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\_type.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\_utilities.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\_variables.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\custom\_white-content.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\plugins\_plugin-perfect-scrollbar.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\_buttons.scss" />
+    <None Remove="Views\Buildings\assets\scss\black-dashboard\_typography.scss" />
+    <None Remove="Views\Shared\assets\css\black-dashboard.css" />
+    <None Remove="Views\Shared\assets\css\black-dashboard.css.map" />
+    <None Remove="Views\Shared\assets\css\black-dashboard.min.css" />
+    <None Remove="Views\Shared\assets\css\nucleo-icons.css" />
+    <None Remove="Views\Shared\assets\demo\demo.css" />
+    <None Remove="Views\Shared\assets\demo\demo.js" />
+    <None Remove="Views\Shared\assets\fonts\nucleo.eot" />
+    <None Remove="Views\Shared\assets\fonts\nucleo.ttf" />
+    <None Remove="Views\Shared\assets\fonts\nucleo.woff" />
+    <None Remove="Views\Shared\assets\fonts\nucleo.woff2" />
+    <None Remove="Views\Shared\assets\img\12345.png" />
+    <None Remove="Views\Shared\assets\img\anime3.png" />
+    <None Remove="Views\Shared\assets\img\anime6.png" />
+    <None Remove="Views\Shared\assets\img\apple-icon.png" />
+    <None Remove="Views\Shared\assets\img\bg5.jpg" />
+    <None Remove="Views\Shared\assets\img\default-avatar.png" />
+    <None Remove="Views\Shared\assets\img\emilyz.jpg" />
+    <None Remove="Views\Shared\assets\img\favicon.png" />
+    <None Remove="Views\Shared\assets\img\header.jpg" />
+    <None Remove="Views\Shared\assets\img\img_3115.jpg" />
+    <None Remove="Views\Shared\assets\img\james.jpg" />
+    <None Remove="Views\Shared\assets\img\mike.jpg" />
+    <None Remove="Views\Shared\assets\img\now-logo.png" />
+    <None Remove="Views\Shared\assets\js\black-dashboard.js" />
+    <None Remove="Views\Shared\assets\js\black-dashboard.js.map" />
+    <None Remove="Views\Shared\assets\js\black-dashboard.min.js" />
+    <None Remove="Views\Shared\assets\js\core\bootstrap.min.js" />
+    <None Remove="Views\Shared\assets\js\core\jquery.min.js" />
+    <None Remove="Views\Shared\assets\js\core\popper.min.js" />
+    <None Remove="Views\Shared\assets\js\plugins\bootstrap-notify.js" />
+    <None Remove="Views\Shared\assets\js\plugins\chartjs.min.js" />
+    <None Remove="Views\Shared\assets\js\plugins\perfect-scrollbar.jquery.min.js" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\bootstrap-grid.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\bootstrap-reboot.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\bootstrap.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_alert.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_background-variant.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_badge.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_border-radius.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_box-shadow.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_breakpoints.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_buttons.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_caret.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_clearfix.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_deprecate.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_float.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_forms.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_gradients.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_grid-framework.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_grid.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_hover.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_image.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_list-group.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_lists.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_nav-divider.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_pagination.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_reset-text.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_resize.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_screen-reader.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_size.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_table-row.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_text-emphasis.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_text-hide.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_text-truncate.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_transition.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_visibility.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\utilities\_align.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\utilities\_background.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\utilities\_borders.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\utilities\_clearfix.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\utilities\_display.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\utilities\_embed.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\utilities\_flex.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\utilities\_float.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\utilities\_overflow.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\utilities\_position.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\utilities\_screenreaders.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\utilities\_shadows.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\utilities\_sizing.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\utilities\_spacing.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\utilities\_stretched-link.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\utilities\_text.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\utilities\_visibility.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\vendor\_rfs.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\_alert.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\_badge.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\_breadcrumb.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\_button-group.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\_buttons.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\_card.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\_carousel.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\_close.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\_code.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\_custom-forms.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\_dropdown.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\_forms.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\_functions.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\_grid.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\_images.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\_input-group.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\_jumbotron.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\_list-group.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\_media.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\_mixins.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\_modal.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\_nav.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\_navbar.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\_pagination.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\_popover.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\_print.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\_progress.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\_reboot.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\_root.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\_spinners.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\_tables.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\_toasts.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\_tooltip.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\_transitions.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\_type.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\_utilities.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\bootstrap\_variables.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\cards\_card-chart.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\cards\_card-map.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\cards\_card-plain.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\cards\_card-task.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\cards\_card-user.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\mixins\opacity.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\mixins\_alert.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\mixins\_background-variant.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\mixins\_badges.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\mixins\_buttons.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\mixins\_dropdown.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\mixins\_forms.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\mixins\_icon.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\mixins\_inputs.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\mixins\_modals.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\mixins\_page-header.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\mixins\_popovers.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\mixins\_vendor-prefixes.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\mixins\_wizard.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\utilities\_backgrounds.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\utilities\_floating.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\utilities\_helper.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\utilities\_position.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\utilities\_shadows.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\utilities\_sizing.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\utilities\_spacing.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\utilities\_text.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\utilities\_transform.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\vendor\_plugin-animate-bootstrap-notify.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\vendor\_plugin-perfect-scrollbar.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\_alerts.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\_buttons.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\_card.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\_checkboxes-radio.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\_dropdown.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\_example-pages.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\_fixed-plugin.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\_footer.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\_forms.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\_functions.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\_images.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\_input-group.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\_misc.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\_mixins.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\_modal.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\_navbar.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\_rtl.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\_sidebar-and-main-panel.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\_tables.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\_type.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\_utilities.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\_variables.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\custom\_white-content.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\plugins\_plugin-perfect-scrollbar.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\_buttons.scss" />
+    <None Remove="Views\Shared\assets\scss\black-dashboard\_typography.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Views\Buildings\assets\css\black-dashboard.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\css\black-dashboard.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\css\black-dashboard.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\css\nucleo-icons.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\demo\demo.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\demo\demo.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\fonts\nucleo.eot">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\fonts\nucleo.ttf">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\fonts\nucleo.woff">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\fonts\nucleo.woff2">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\img\12345.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\img\anime3.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\img\anime6.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\img\apple-icon.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\img\bg5.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\img\default-avatar.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\img\emilyz.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\img\favicon.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\img\header.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\img\img_3115.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\img\james.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\img\mike.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\img\now-logo.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\js\black-dashboard.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\js\black-dashboard.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\js\black-dashboard.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\js\core\bootstrap.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\js\core\jquery.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\js\core\popper.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\js\plugins\bootstrap-notify.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\js\plugins\chartjs.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\js\plugins\perfect-scrollbar.jquery.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\bootstrap-grid.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\bootstrap-reboot.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\bootstrap.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_alert.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_background-variant.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_badge.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_border-radius.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_box-shadow.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_breakpoints.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_buttons.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_caret.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_clearfix.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_deprecate.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_float.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_forms.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_gradients.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_grid-framework.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_grid.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_hover.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_image.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_list-group.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_lists.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_nav-divider.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_pagination.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_reset-text.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_resize.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_screen-reader.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_size.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_table-row.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_text-emphasis.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_text-hide.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_text-truncate.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_transition.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\mixins\_visibility.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\utilities\_align.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\utilities\_background.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\utilities\_borders.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\utilities\_clearfix.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\utilities\_display.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\utilities\_embed.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\utilities\_flex.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\utilities\_float.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\utilities\_overflow.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\utilities\_position.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\utilities\_screenreaders.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\utilities\_shadows.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\utilities\_sizing.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\utilities\_spacing.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\utilities\_stretched-link.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\utilities\_text.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\utilities\_visibility.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\vendor\_rfs.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\_alert.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\_badge.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\_breadcrumb.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\_button-group.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\_buttons.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\_card.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\_carousel.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\_close.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\_code.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\_custom-forms.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\_dropdown.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\_forms.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\_functions.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\_grid.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\_images.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\_input-group.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\_jumbotron.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\_list-group.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\_media.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\_mixins.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\_modal.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\_nav.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\_navbar.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\_pagination.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\_popover.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\_print.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\_progress.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\_reboot.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\_root.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\_spinners.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\_tables.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\_toasts.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\_tooltip.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\_transitions.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\_type.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\_utilities.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\bootstrap\_variables.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\cards\_card-chart.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\cards\_card-map.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\cards\_card-plain.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\cards\_card-task.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\cards\_card-user.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\mixins\opacity.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\mixins\_alert.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\mixins\_background-variant.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\mixins\_badges.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\mixins\_buttons.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\mixins\_dropdown.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\mixins\_forms.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\mixins\_icon.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\mixins\_inputs.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\mixins\_modals.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\mixins\_page-header.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\mixins\_popovers.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\mixins\_vendor-prefixes.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\mixins\_wizard.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\utilities\_backgrounds.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\utilities\_floating.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\utilities\_helper.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\utilities\_position.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\utilities\_shadows.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\utilities\_sizing.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\utilities\_spacing.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\utilities\_text.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\utilities\_transform.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\vendor\_plugin-animate-bootstrap-notify.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\vendor\_plugin-perfect-scrollbar.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\_alerts.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\_buttons.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\_card.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\_checkboxes-radio.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\_dropdown.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\_example-pages.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\_fixed-plugin.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\_footer.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\_forms.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\_functions.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\_images.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\_input-group.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\_misc.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\_mixins.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\_modal.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\_navbar.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\_rtl.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\_sidebar-and-main-panel.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\_tables.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\_type.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\_utilities.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\_variables.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\custom\_white-content.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\plugins\_plugin-perfect-scrollbar.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\_buttons.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Buildings\assets\scss\black-dashboard\_typography.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\css\black-dashboard.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\css\black-dashboard.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\css\black-dashboard.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\css\nucleo-icons.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\demo\demo.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\demo\demo.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\fonts\nucleo.eot">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\fonts\nucleo.ttf">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\fonts\nucleo.woff">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\fonts\nucleo.woff2">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\img\12345.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\img\anime3.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\img\anime6.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\img\apple-icon.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\img\bg5.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\img\default-avatar.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\img\emilyz.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\img\favicon.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\img\header.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\img\img_3115.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\img\james.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\img\mike.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\img\now-logo.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\js\black-dashboard.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\js\black-dashboard.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\js\black-dashboard.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\js\core\bootstrap.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\js\core\jquery.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\js\core\popper.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\js\plugins\bootstrap-notify.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\js\plugins\chartjs.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\js\plugins\perfect-scrollbar.jquery.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\bootstrap-grid.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\bootstrap-reboot.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\bootstrap.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_alert.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_background-variant.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_badge.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_border-radius.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_box-shadow.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_breakpoints.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_buttons.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_caret.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_clearfix.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_deprecate.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_float.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_forms.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_gradients.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_grid-framework.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_grid.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_hover.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_image.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_list-group.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_lists.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_nav-divider.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_pagination.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_reset-text.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_resize.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_screen-reader.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_size.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_table-row.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_text-emphasis.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_text-hide.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_text-truncate.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_transition.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\mixins\_visibility.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\utilities\_align.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\utilities\_background.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\utilities\_borders.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\utilities\_clearfix.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\utilities\_display.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\utilities\_embed.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\utilities\_flex.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\utilities\_float.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\utilities\_overflow.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\utilities\_position.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\utilities\_screenreaders.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\utilities\_shadows.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\utilities\_sizing.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\utilities\_spacing.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\utilities\_stretched-link.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\utilities\_text.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\utilities\_visibility.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\vendor\_rfs.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\_alert.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\_badge.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\_breadcrumb.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\_button-group.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\_buttons.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\_card.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\_carousel.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\_close.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\_code.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\_custom-forms.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\_dropdown.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\_forms.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\_functions.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\_grid.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\_images.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\_input-group.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\_jumbotron.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\_list-group.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\_media.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\_mixins.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\_modal.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\_nav.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\_navbar.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\_pagination.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\_popover.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\_print.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\_progress.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\_reboot.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\_root.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\_spinners.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\_tables.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\_toasts.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\_tooltip.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\_transitions.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\_type.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\_utilities.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\bootstrap\_variables.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\cards\_card-chart.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\cards\_card-map.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\cards\_card-plain.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\cards\_card-task.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\cards\_card-user.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\mixins\opacity.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\mixins\_alert.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\mixins\_background-variant.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\mixins\_badges.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\mixins\_buttons.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\mixins\_dropdown.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\mixins\_forms.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\mixins\_icon.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\mixins\_inputs.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\mixins\_modals.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\mixins\_page-header.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\mixins\_popovers.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\mixins\_vendor-prefixes.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\mixins\_wizard.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\utilities\_backgrounds.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\utilities\_floating.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\utilities\_helper.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\utilities\_position.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\utilities\_shadows.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\utilities\_sizing.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\utilities\_spacing.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\utilities\_text.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\utilities\_transform.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\vendor\_plugin-animate-bootstrap-notify.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\vendor\_plugin-perfect-scrollbar.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\_alerts.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\_buttons.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\_card.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\_checkboxes-radio.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\_dropdown.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\_example-pages.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\_fixed-plugin.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\_footer.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\_forms.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\_functions.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\_images.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\_input-group.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\_misc.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\_mixins.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\_modal.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\_navbar.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\_rtl.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\_sidebar-and-main-panel.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\_tables.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\_type.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\_utilities.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\_variables.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\custom\_white-content.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\plugins\_plugin-perfect-scrollbar.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\_buttons.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Shared\assets\scss\black-dashboard\_typography.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="bootstrap" Version="4.5.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.8" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Xml" Version="3.1.8" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Views\IHome\Index.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+@if (User.Identity.IsAuthenticated)
+{
+    <div>Użytkownik Zalogowany.</div>
+}
+else
+{
+    <div>Użytkownik Niezalogowany.</div>
+}
+
+<a asp-controller="Account" asp-action="Register">Rejestracja</a>
+<a asp-controller="Account" asp-action="LogIn">Zaloguj</a>
+<a asp-controller="Role" asp-action="Index">Role</a>
+<a asp-controller="Account" asp-action="Logout">Wyloguj</a>
