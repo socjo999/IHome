@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using IHome.Models;
 using System.Security.Cryptography.X509Certificates;
+using IHome.ViewModel;
 
 namespace IHome.Controllers
 {
@@ -20,20 +21,20 @@ namespace IHome.Controllers
         }
 
         // GET: Devices
-        public async Task<IActionResult> Index([FromServices] EFCContext context)
+        public IActionResult Index([FromServices] EFCContext context)
         {
-            return View(await context.Devices.Include(id=>id.Buildings).ToListAsync());
+            return View(context.Devices.Include(x =>x.Building).ToListAsync());
         }
 
         // GET: Devices/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public IActionResult Details(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var devices = _context.Devices.Include(id => id.Buildings).Include(id => id.Zones).Include(id=>id.Groups).Single(x => x.ID == id);
+            var devices = _context.Devices.Include(x => x.Building).Include(id => id.Zones).Include(id=>id.Groups).Single(x => x.ID == id);
                 //.FirstOrDefaultAsync(m => m.ID == id);
             if (devices == null)
             {
@@ -50,20 +51,23 @@ namespace IHome.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,Name,Description")] Devices devices)
+        public IActionResult Create(CreateDeviceViewModel devices)
         {
-            var selectedValue = int.Parse(Request.Form["BuildingList"]);
-
-            devices.Building = ;
-            //devices.Buildings =1;
-            //devices.Buildings =1;
+            var device = new Devices()
+            {
+                Name = devices.Name,
+                Description = devices.Description,
+                BuildingId = devices.BuildingId
+                //Building = _context.Buildings.FirstOrDefault(x => x.ID == devices.BuildingId)
+            };
+            
             if (ModelState.IsValid)
             {
-                _context.Add(devices);
-                await _context.SaveChangesAsync();
+                _context.Add(device);
+                _context.SaveChanges();
                 return RedirectToAction(nameof(Index));
             }
-            return View(devices);
+            return View(device);
         }
 
         public async Task<IActionResult> Edit(int? id)

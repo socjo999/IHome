@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kasia\\source\\repos\\IHome — kopia\\IHome\\IHome.csproj": {}
+    "D:\\pikt_pl\\CodersLab\\WAR_NET_W_04_Warsztat\\Witek\\IHome\\IHome — kopia\\IHome\\IHome.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kasia\\source\\repos\\IHome — kopia\\IHome\\IHome.csproj": {
+    "D:\\pikt_pl\\CodersLab\\WAR_NET_W_04_Warsztat\\Witek\\IHome\\IHome — kopia\\IHome\\IHome.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kasia\\source\\repos\\IHome — kopia\\IHome\\IHome.csproj",
+        "projectUniqueName": "D:\\pikt_pl\\CodersLab\\WAR_NET_W_04_Warsztat\\Witek\\IHome\\IHome — kopia\\IHome\\IHome.csproj",
         "projectName": "IHome",
-        "projectPath": "C:\\Users\\kasia\\source\\repos\\IHome — kopia\\IHome\\IHome.csproj",
-        "packagesPath": "C:\\Users\\kasia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kasia\\source\\repos\\IHome — kopia\\IHome\\obj\\",
+        "projectPath": "D:\\pikt_pl\\CodersLab\\WAR_NET_W_04_Warsztat\\Witek\\IHome\\IHome — kopia\\IHome\\IHome.csproj",
+        "packagesPath": "C:\\Users\\Kowal\\.nuget\\packages\\",
+        "outputPath": "D:\\pikt_pl\\CodersLab\\WAR_NET_W_04_Warsztat\\Witek\\IHome\\IHome — kopia\\IHome\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\kasia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Kowal\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -99,7 +102,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

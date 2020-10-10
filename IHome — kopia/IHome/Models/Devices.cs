@@ -14,6 +14,7 @@ namespace IHome.Models
         public string Name { get; set; }
         public string Description { get; set; }
         public Zones Zones { get; set; }
+        public int BuildingId { get; set; }
         [Required]
         public Buildings Building { get; set; }
         public Groups Groups { get; set; }

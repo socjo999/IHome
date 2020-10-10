@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Root>
   <ConnectionString>
-      Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=IHome4;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False
+    Data Source=DESKTOP-DR6EDOF\SQLEXPRESS;Initial Catalog=IHome4;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False
   </ConnectionString>
 </Root>
